@@ -300,5 +300,4 @@ alembic downgrade -1
 # View current version
 alembic current
 ```
-#   b a n k i n g - w o r k f l o w  
- 
+#
