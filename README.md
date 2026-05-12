@@ -1004,7 +1004,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 **Marwan Yasser**
 
 - GitHub: [@marwan-yasser644](https://github.com/marwan-yasser644)
-- Email: [contact@marawanyasser644@gmail.com](contact:marawanyasser644@gmail.com)
+- Email: [marawanyasser644@gmail.com](contact:marawanyasser644@gmail.com)
 
 ---
 
