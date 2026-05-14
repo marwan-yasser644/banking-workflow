@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthStore } from '@/app/store'
@@ -83,3 +84,17 @@ function App() {
 }
 
 export default App
+=======
+import { AuthProvider } from './auth/AuthContext';
+import { AppRouter } from './app/router';
+
+function App() {
+  return (
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
+  );
+}
+
+export default App;
+>>>>>>> 2c26bb1eb455214f77113d5d43609d94c252cf3c
