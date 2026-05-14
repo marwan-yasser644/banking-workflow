@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
@@ -12,6 +11,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    host: '0.0.0.0',
     proxy: {
       '/api': {
         target: 'http://localhost:8000',
@@ -21,15 +21,3 @@ export default defineConfig({
     },
   },
 })
-=======
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
-
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 4173,
-    host: '0.0.0.0',
-  },
-});
->>>>>>> 2c26bb1eb455214f77113d5d43609d94c252cf3c

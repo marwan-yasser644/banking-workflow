@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
+    './index.html',
     './src/**/*.{ts,tsx}',
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -22,6 +18,7 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -50,6 +47,8 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
+        // banking theme
         bank: {
           navy: "#0f2d5e",
           blue: "#1a56db",
@@ -57,13 +56,23 @@ export default {
           green: "#057a55",
           amber: "#d97706",
           red: "#e02424",
-        }
+        },
+
+        // extra UI surfaces (from other branch)
+        surface: '#F8FAFC',
+        panel: '#EFF6FF',
       },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
+      boxShadow: {
+        card: '0 16px 48px rgba(15, 23, 42, 0.08)',
+      },
+
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -82,12 +91,14 @@ export default {
           to: { transform: "translateX(0)" },
         },
       },
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
         "slide-in": "slide-in 0.3s ease-out",
       },
+
       fontFamily: {
         sans: ["'DM Sans'", "sans-serif"],
         display: ["'Sora'", "sans-serif"],
@@ -95,23 +106,6 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
-=======
-export default {
-  content: ['./index.html', './src/**/*.{ts,tsx}'],
-  theme: {
-    extend: {
-      boxShadow: {
-        card: '0 16px 48px rgba(15, 23, 42, 0.08)',
-      },
-      colors: {
-        surface: '#F8FAFC',
-        panel: '#EFF6FF',
-        border: '#E2E8F0',
-      },
-    },
-  },
+
   plugins: [],
-};
->>>>>>> 2c26bb1eb455214f77113d5d43609d94c252cf3c
+}
